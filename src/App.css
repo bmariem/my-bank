@@ -1,0 +1,147 @@
+/* Other rules */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #273338;
+  padding: 20px;
+  max-height: 100px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 35px;
+}
+
+header .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .user p {
+  color: #fff;
+  font-size: 18px;
+}
+
+header .user svg {
+  background-color: #fff;
+  width: 40px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.accounts {
+  max-width: 700px;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+}
+
+.account {
+  margin-top: 2rem;
+}
+
+.account .account-header {
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.account .account-header .name {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.account .account-header .balance {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.account .account-header span {
+  margin-left: 0.5rem;
+  opacity: 0.7;
+}
+
+.account .account-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0rem 1rem;
+  margin-top: 1rem;
+}
+
+.account .operations {
+  margin: 0 1rem;
+  background: white;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+
+.account .operations .operation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+}
+
+.account .operations .operation:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.account .operations .operation-date {
+  color: #455a64;
+  font-size: 0.8rem;
+  padding: 0 1rem;
+  max-width: 100px;
+}
+
+.account .operations .operation-description {
+  flex: 1;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+.account .operations .operation-amount {
+  padding: 0 1rem;
+}
+
+.account-footer .button {
+  border: 1px solid #f7f7f7;
+  background: #f7f7f7;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  color: #546e7a;
+  font-size: 14px;
+  font-weight: 500;
+}
+.account-footer .button:hover {
+  color: #0d47a1;
+  background: rgba(13, 71, 160, 0.1);
+}
